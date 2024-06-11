@@ -9,10 +9,14 @@
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
     <script src="index.js" defer></script>
+    
+
 </head>
 <body>
     <div id="top">
-        <div id="banner"></div>
+        <div id="banner">
+            <img src="media/banner.png" alt="banner">
+        </div>
         <hr id="top-hr">    
         
         <div id="top-btn">
@@ -23,10 +27,6 @@
                 <img src="media/add-user.png" alt="register-icon" id="register-icon">
             </button>
         </div> 
-
-        <div id="logo"> 
-            <img src="media/logo-circle.png" alt="logo" id="logo">
-        </div>
     </div>
 
     <div id="login-form" title="Hi, mate!">
@@ -49,10 +49,22 @@
     </div>
     
     <main>
-
-
+        <div id="logo"> 
+            <img src="media/logo-circle.png" alt="logo" id="logo">
+        </div>
+        
+        <div id="product">
+            <ul id="tabs">
+                <li><a class="option" target="page" href="female.html">Female</a></li>
+                <li><a class="option" target="page" id="male" href="male.html">Male</a></li>
+                <li><a class="option" target="page" href="nonbinary.html">Non-binary</a></li>
+            </ul>
+        </div>
     </main>
 
+    <div>
+        <iframe id="product_iframe" name="page"></iframe>
+    </div>
 
 </body>
 </html>

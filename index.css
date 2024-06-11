@@ -12,24 +12,20 @@ body, html {
 }
 
 #banner{
-    background-image: url('media/banner.png');
-    background-blend-mode: overlay; /* 讓照片在原背景之上 */
-    /*background-size: cover;*/
-    height: 50px; 
+    height: 100px; 
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     top: 0;
-    z-index: 9999;
 }
 
-#top-hr{ border-bottom: 1px solid lightcoral;}
+#top-hr{ border-bottom: 1.5px dashed lightcoral;}
 
 #top-btn{
     position: fixed;
     right: 10px;
-    top: 4%;
+    top: 8%;
     z-index: 10000;
 }
 
@@ -60,4 +56,61 @@ body, html {
     background: #f294cc  url("") 50% 50% repeat-x; 
     color: white; 
     font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: space-between; /* 在主轴上分散对齐 */
+    align-items: center; /* 在交叉轴上居中对齐 */
+    padding: 0 20px;
+}
+
+#logo {
+    order: 1;
+}
+
+#product {
+    display: flex; 
+    justify-content: center;
+    order: 2;
+    flex-grow: 1; /* 使#product占据剩余空间 */
+}
+  
+#tabs li {
+    display: inline-block;
+    margin-right: 100px;
+    list-style-type: none;
+    font: 25px bold Andale Mono, monospace;
+    flex: 1;
+    padding: 0 50px 0 50px;
+}
+  
+#tabs li a {
+    text-decoration: none;
+    position: relative; 
+    display: inline-block;
+    color: inherit;
+    &:hover {
+      color: rgb(182, 13, 143);
+    }
+}
+  
+#tabs li a::after {   
+    content:" ";
+    display:block; 
+    width: 0%;
+    height: 2px;
+    background-color: rgb(182, 13, 182);
+    transition: .4s .2s;
+}
+  
+#tabs li a:hover::after { width: 100%; }
+  
+#product_iframe{
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 1300px;
+    border: none;
+    overflow: hidden;
 }

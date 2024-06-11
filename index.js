@@ -63,3 +63,8 @@ $(function(){
        if ($("#login-form").dialog("isOpen") === true)   $("#login-form").dialog("close");
     });
  });
+
+  //這裡先觸發male.html
+ window.onload = function() {
+    document.getElementById("male").click();
+};
