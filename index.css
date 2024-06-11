@@ -1,0 +1,63 @@
+body, html {
+    height: 100%;
+    background-image: url("media/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    user-select: none;
+    position: relative;
+}
+
+#banner{
+    background-image: url('media/banner.png');
+    background-blend-mode: overlay; /* 讓照片在原背景之上 */
+    /*background-size: cover;*/
+    height: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0;
+    z-index: 9999;
+}
+
+#top-hr{ border-bottom: 1px solid lightcoral;}
+
+#top-btn{
+    position: fixed;
+    right: 10px;
+    top: 4%;
+    z-index: 10000;
+}
+
+#logo{
+    width: 90px; 
+    height: 90px; 
+    padding-left: 1%;
+}
+
+#call-loginbtn, #registerbtn{
+    border-style: none;
+    background-color: white;
+    border-radius: 10px;
+    transition: background-color 0.5s;
+}
+  
+#call-loginbtn:hover, #registerbtn:hover{
+    background-color: rgba(243, 172, 208, 0.75);
+}
+  
+#login-icon, #register-icon{
+      width: 23px; 
+      height: 23px;
+}
+
+.custom-dialog .ui-widget-header{ 
+    border: 1px solid #aaaaaa; 
+    background: #f294cc  url("") 50% 50% repeat-x; 
+    color: white; 
+    font-weight: bold;
+}

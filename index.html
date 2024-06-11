@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZUZU_TW</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div id="top">
+        <div id="banner"></div>
+        <hr id="top-hr">    
+        
+        <div id="top-btn">
+            <button id="call-loginbtn">
+                <img src="media/login-icon.png" alt="login-icon" id="login-icon">
+            </button>
+            <button id="registerbtn">
+                <img src="media/add-user.png" alt="register-icon" id="register-icon">
+            </button>
+        </div> 
+
+        <div id="logo"> 
+            <img src="media/logo-circle.png" alt="logo" id="logo">
+        </div>
+    </div>
+
+    <div id="login-form" title="Hi, mate!">
+        <form>
+            <input type="text" id="username" placeholder="Account" required><br><br>
+            <input type="password" id="password" placeholder="Password" required><br><br>
+            <input type="button" value="Login" id="login-btn" onclick="validate()">
+            <input type="button" value="Cancel" id="cancel-btn" onclick="cancel()">
+        </form>
+    </div>
+
+    <div id="register-form" title="New to ZuZu?">
+        <form>
+            <input type="text" id="new_username" placeholder="Account" required><br><br>
+            <input type="password" id="password1" placeholder="Password" required><br><br>
+            <input type="password" id="password2" placeholder="Confirmed Password" required><br><br>
+            <input type="button" value="Confirm" id="register-btn" onclick="register()">
+            <input type="button" value="Cancel" id="cancel-btn" onclick="cancel()">
+        </form>
+    </div>
+    
+    <main>
+
+
+    </main>
+
+
+</body>
+</html>
