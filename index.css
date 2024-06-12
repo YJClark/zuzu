@@ -1,3 +1,17 @@
+::-webkit-scrollbar { 
+    width: 8px; 
+    background-color: transparent; 
+}
+::-webkit-scrollbar-thumb { 
+    background-color: #888; 
+    border-radius: 5px; 
+    transition: transform 0.3s;
+}
+::-webkit-scrollbar-track { 
+    background-color: transparent; 
+    border-radius: 5px; 
+}
+
 body, html {
     height: 100%;
     background-image: url("media/bg.jpg");
@@ -12,12 +26,12 @@ body, html {
 }
 
 #banner{
-    height: 100px; 
+    height: 90px; 
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    top: 0;
+    top: 10px;
 }
 
 #top-hr{ border-bottom: 1.5px dashed lightcoral;}
@@ -25,14 +39,13 @@ body, html {
 #top-btn{
     position: fixed;
     right: 10px;
-    top: 8%;
-    z-index: 10000;
+    top: 5%;
 }
 
 #logo{
-    width: 90px; 
-    height: 90px; 
-    padding-left: 1%;
+    width: 88px; 
+    height: 88px; 
+    padding-left: 0.5%;
 }
 
 #call-loginbtn, #registerbtn{
@@ -109,7 +122,7 @@ main {
 #product_iframe{
     display: block;
     margin: 0 auto;
-    width: 90%;
+    width: 85%;
     height: 1300px;
     border: none;
     overflow: hidden;

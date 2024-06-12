@@ -30,7 +30,6 @@ $('#login-form').dialog({
     dialogClass: 'custom-dialog'
 });
 
-
 $('#register-form').dialog({
     autoOpen: false,
     modal: false,
