@@ -6,10 +6,10 @@ var male = [
     { id: "Jeff", price: 1000, imgSrc: "jeff.jpg" },
     { id: "Lu", price: 1800, imgSrc: "lu.jpg" },
     { id: "Ma", price: 1500, imgSrc: "ma.jpg" },
-    { id: "Marc", price: 1250, imgSrc: "marc.jpg" },
-    { id: "Min", price: 1250, imgSrc: "min.jpg" },
-    { id: "Peko", price: 1250, imgSrc: "peko.jpg" },
-    { id: "Yang", price: 1250, imgSrc: "yang.jpg" }
+    { id: "Marc", price: 1250, imgSrc: "marc.jpg"},
+    { id: "Austin", price: 1250, imgSrc: "min.jpg"},
+    { id: "Peko", price: 1250, imgSrc: "peko.jpg"},
+    { id: "Oscar", price: 1250, imgSrc: "yang.jpg" }
 ]
 
 function createProductTable(f) {
@@ -37,13 +37,13 @@ function createProductTable(f) {
                 img.alt = idol.id;
 
                 var p = document.createElement('p');
-                p.innerHTML = idol.id + "<br>Price: NT$" + idol.price + "/hr";
+                p.innerHTML = idol.id + "<br>";
 
                 var button = document.createElement('button');
                 button.classList.add('detail_btn');
                 button.textContent = "more";
                 //這邊要改生成detail頁面的function
-                button.setAttribute('onclick', 'updatePrice(' + idol.price + ', "' + idol.imgSrc + '")');
+                button.setAttribute('onclick', 'generateDetail()');
 
                 td.appendChild(img);
                 td.appendChild(p);
@@ -57,3 +57,7 @@ function createProductTable(f) {
 }
 
 createProductTable(male);
+
+function generateDetail(){
+    alert("您點擊了更多");
+}

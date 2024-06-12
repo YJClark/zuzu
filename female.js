@@ -33,8 +33,7 @@ function createProductTable(f) {
                 img.alt = idol.id;
 
                 var p = document.createElement('p');
-                p.innerHTML = idol.id + "<br>Price: NT$" + idol.price + "/hr";
-
+                p.innerHTML = idol.id + "<br>";
                 var button = document.createElement('button');
                 button.classList.add('detail_btn');
                 button.textContent = "more";
