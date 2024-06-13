@@ -162,7 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set the minimum date to today for date picker
     const today = new Date().toISOString().split('T')[0];
     datePicker.setAttribute('min', today);
-    
+
     // Schedule the date
     scheduleButton.onclick = function() {
         const selectedDate = datePicker.value;
@@ -188,13 +188,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const day = dateObj.getDate();
         const month = dateObj.getMonth() + 1;
         const year = dateObj.getFullYear();
-			alert('預約成功！\n電話：34101282\n姓名：黃彥哲');
+			alert('預約成功！\n電話：34101282\n姓名：克拉克');
         const calendarDays = calendar.querySelectorAll('.calendar-day');
         calendarDays.forEach(dayElem => {
             const dayDate = new Date(dayElem.dataset.date);
             if (dayDate.getDate() === day && dayDate.getMonth() + 1 === month && dayDate.getFullYear() === year) {
                 const input = dayElem.querySelector('input');
-                input.value = '黃先生 已預定';
+                input.value = '克先生 已預定';
                 dayElem.classList.add('blocked'); // Add blocked class to visually indicate it's reserved
             }
         });
