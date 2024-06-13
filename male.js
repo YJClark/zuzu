@@ -10,7 +10,7 @@ var male = [
     { id: "Austin", price: 1350, imgSrc: "min.jpg"},
     { id: "Peko", price: 1500, imgSrc: "peko.jpg"},
     { id: "Oscar", price: 2000, imgSrc: "yang.jpg" },
-    { id: "Kozushun", price: 1500, imgSrc: "kozushun.jpg"}
+    { id: "Kozushun", price: 1500, imgSrc: "kozushun.JPG"}
 ]
 
 var detail = [
