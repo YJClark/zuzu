@@ -1,11 +1,16 @@
 var female = [
-    { id: "Eunha", price: 1000, imgSrc: "eunha.jpg" },
+    { id: "Eunha", price: 1200, imgSrc: "eunha.jpg" },
     { id: "Irene", price: 1600, imgSrc: "irene.jpg" },
-    { id: "Sana", price: 1200, imgSrc: "sana.jpg" },
+    { id: "Sana", price: 2000, imgSrc: "sana.jpg" },
     { id: "Sullyoon", price: 1000, imgSrc: "sullyoon.jpg" },
     { id: "So-Hee", price: 1800, imgSrc: "xeeseo.jpg" },
     { id: "Yeji", price: 1500, imgSrc: "yeji.jpg" },
-    { id: "Winter", price: 1350, imgSrc: "winter.jpg" }
+    { id: "Winter", price: 1600, imgSrc: "winter.jpg" },
+    { id: "Karina", price: 1600, imgSrc: "karina.jpg" },
+    { id: "Suzy", price: 1500, imgSrc: "suzy.jpg" },
+    { id: "Yujin", price: 1300, imgSrc: "yujin.jpg" },
+    { id: "Sakura", price: 1200, imgSrc: "sakura.jpg" },
+    { id: "Kazuha", price: 1200, imgSrc: "kazuha.jpg" }
 ]
 
 var detail = [
@@ -15,7 +20,12 @@ var detail = [
     { mbti:"ISFP", height:"168", loc:"台南", aca:"翰林藝高", career:"idol", feature:"發泡泡", mar:"單身", lan:"韓文、英文", age:'20'},
     { mbti:"INFP", height:"165", loc:"台南", aca:"蔚山藝高", career:"演員", feature:"刺青", mar:"單身", lan:"韓文、英文", age:'29'},
     { mbti:"ESFJ", height:"167", loc:"台南", aca:"全州商高", career:"idol", feature:"跳舞", mar:"單身", lan:"韓文、英文", age:'24'},
-    { mbti:"ISFJ", height:"164", loc:"台南", aca:"梁山女高", career:"idol", feature:"拍抖音", mar:"單身", lan:"韓文、英文", age:'23'}
+    { mbti:"ISFJ", height:"164", loc:"台南", aca:"梁山女高", career:"idol", feature:"拍抖音", mar:"單身", lan:"韓文、英文", age:'23'},
+    { mbti:"ENFP", height:"167", loc:"台南", aca:"한솔高校", career:"idol", feature:"拍抖音", mar:"單身", lan:"韓文、英文", age:'24'},
+    { mbti:"ISTP", height:"168", loc:"首爾", aca:"首爾藝高", career:"模特兒", feature:"穿搭", mar:"單身", lan:"韓文、英文、中文", age:'29'},
+    { mbti:"ESTP", height:"174", loc:"台南", aca:"首爾藝高", career:"idol", feature:"綜藝", mar:"單身", lan:"韓文、日文", age:'20'},
+    { mbti:"ENFP", height:"164", loc:"鹿兒島", aca:"IZONE", career:"電競選手", feature:"織毛衣", mar:"單身", lan:"韓文、日文", age:'26'},
+    { mbti:"ENFP", height:"170", loc:"大阪", aca:"荷蘭芭蕾舞學院", career:"舞者", feature:"芭蕾", mar:"單身", lan:"韓文、日文、英文", age:'20'}
 ]
 
 var service = [
@@ -24,7 +34,12 @@ var service = [
     {services: "鐘點約會、專業職人、商業應酬"},
     {services: "鐘點約會、旅遊陪同、專業職人、朋友聚會、商業應酬"},
     {services: "鐘點約會、專業職人、商業應酬"},
+    {services: "鐘點約會、專業職人、朋友聚會"},
     {services: "鐘點約會、專業職人、商業應酬"},
+    {services: "鐘點約會、旅遊陪同、商業應酬"},
+    {services: "鐘點約會、專業職人、商業應酬"},
+    {services: "鐘點約會、旅遊陪同、商業應酬"},
+    {services: "鐘點約會、專業職人、朋友聚會"},
     {services: "鐘點約會、專業職人、商業應酬"}
 ]
 
