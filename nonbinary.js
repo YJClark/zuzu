@@ -10,7 +10,7 @@ var others = [
 
 var detail = [
     { mbti:"ISTP", height:"50", loc:"武鬥道館", aca:"水", career:"烏龜", feature:"激流", mar:"單身", lan:"日文", age:'5'}, 
-    { mbti:"ISTJ", height:"158", loc:"釜炎道館", aca:"火", career:"龍", feature:"罵人20min", mar:"單身", lan:"日文", age:'5'},
+    { mbti:"ISTJ", height:"158", loc:"釜炎道館", aca:"火", career:"龍", feature:"猛火", mar:"單身", lan:"日文", age:'5'},
     { mbti:"ENFP", height:"40", loc:"枯葉道館", aca:"電", career:"老鼠", feature:"靜電", mar:"單身", lan:"日文", age:'5'},
     { mbti:"ISFJ", height:"70", loc:"台南", aca:"草", career:"青蛙", feature:"茂盛", mar:"單身", lan:"日文", age:'23'},
     { mbti:"ISFP", height:"70", loc:"永康", aca:"吃貨", career:"睡覺", feature:"睡覺", mar:"已結渣", lan:"喵", age:'6'},
@@ -95,7 +95,7 @@ document.querySelectorAll('.detail_btn').forEach(button => {
         document.getElementById('modal-loc').textContent = personDetail.loc;
         document.getElementById('modal-age').textContent = personDetail.age;
         document.getElementById('modal-services').textContent = ser.services;
-        //document.getElementById('modal-price').textContent = `NT$ ${person.price}`;
+        // document.getElementById('modal-price').textContent = `NT$ ${person.price}`;
 
         document.getElementById('modal').style.opacity = 0;
         document.getElementById('modal').style.display = "block";
@@ -119,4 +119,119 @@ window.addEventListener('click', function(event) {
     if (event.target == document.getElementById('modal')) {
         document.getElementById('modal').style.display = "none";
     }
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const modal = document.getElementById('modal');
+    const closeBtns = document.querySelectorAll('.close');
+    const reserveIcon = document.getElementById('reserve-icon');
+    const datePicker = document.getElementById('date-picker');
+    const scheduleButton = document.getElementById('schedule-button');
+    const scheduleModal = document.getElementById('schedule-modal');
+    const calendar = document.getElementById('calendar');
+
+    // Close modals
+    closeBtns.forEach(btn => {
+        btn.onclick = function() {
+            btn.parentElement.parentElement.style.display = 'none';
+            enableBackgroundInteraction();
+        };
+    });
+
+    // Show date picker on icon click
+    reserveIcon.onclick = function() {
+        datePicker.style.display = 'block';
+        scheduleButton.classList.remove('hidden');
+    };
+
+    // Set the minimum date to today for date picker
+    const today = new Date().toISOString().split('T')[0];
+    datePicker.setAttribute('min', today);
+
+    // Schedule the date
+    scheduleButton.onclick = function() {
+        const selectedDate = datePicker.value;
+        if (selectedDate) {
+            addScheduleToCalendar(selectedDate);
+            datePicker.style.display = 'none';
+            scheduleButton.classList.add('hidden');
+            scheduleModal.style.display = 'block';
+            disableBackgroundInteraction();
+        } else {
+            alert('Please select a date.');
+        }
+    };
+
+    // Function to add scheduled date to calendar
+    function addScheduleToCalendar(date) {
+        const dateObj = new Date(date);
+        const day = dateObj.getDate();
+        const month = dateObj.getMonth() + 1;
+        const year = dateObj.getFullYear();
+			alert('預約成功！\n電話：34101282\n姓名：黃彥哲');
+        const calendarDays = calendar.querySelectorAll('.calendar-day');
+        calendarDays.forEach(dayElem => {
+            const dayDate = new Date(dayElem.dataset.date);
+            if (dayDate.getDate() === day && dayDate.getMonth() + 1 === month && dayDate.getFullYear() === year) {
+                const input = dayElem.querySelector('input');
+                input.value = '黃先生 已預定';
+                dayElem.classList.add('blocked'); // Add blocked class to visually indicate it's reserved
+            }
+        });
+    }
+
+    // Function to create calendar for the current month
+    function createCalendar() {
+        const now = new Date();
+        const startOfMonth = new Date(now.getFullYear(), now.getMonth(), 1);
+        const endOfMonth = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+
+        // Display current month and year in the schedule modal
+        const monthYearText = document.createElement('p');
+        monthYearText.textContent = `${startOfMonth.toLocaleString('default', { month: 'long' })} ${startOfMonth.getFullYear()}`;
+        monthYearText.classList.add('month-year-text');
+        scheduleModal.querySelector('.modal-content').insertBefore(monthYearText, calendar);
+
+        for (let i = 1; i <= endOfMonth.getDate(); i++) {
+            const day = document.createElement('div');
+            day.className = 'calendar-day';
+            day.dataset.date = new Date(now.getFullYear(), now.getMonth(), i).toISOString();
+
+            const span = document.createElement('span');
+            span.textContent = i;
+
+            const input = document.createElement('input');
+            input.type = 'text';
+            input.disabled = true;
+
+            day.appendChild(span);
+            day.appendChild(input);
+            calendar.appendChild(day);
+        }
+    }
+
+    createCalendar();
+
+    // Disable background interaction
+    function disableBackgroundInteraction() {
+        const elements = document.querySelectorAll('body > :not(.modal)');
+        elements.forEach(element => {
+            element.classList.add('disabled');
+        });
+    }
+
+    // Enable background interaction
+    function enableBackgroundInteraction() {
+        const elements = document.querySelectorAll('body > :not(.modal)');
+        elements.forEach(element => {
+            element.classList.remove('disabled');
+        });
+    }
+
+    // Close modal when clicking outside of it
+    window.onclick = function(event) {
+        if (event.target == modal || event.target == scheduleModal) {
+            event.target.style.display = 'none';
+            enableBackgroundInteraction();
+        }
+    };
 });

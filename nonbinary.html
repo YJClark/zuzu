@@ -14,9 +14,11 @@
         <div class="modal-content">
             <span class="close">&times;</span>  <!--關掉div-->
             <p id="modal-name"></p>
-            <div class="left-section">
+              <div class="left-section">
                 <div><img id="circle_pic"></div>
-                <button id="reserve-button">預約時間</button>
+                <img src="time.png" id="reserve-icon" alt="Reserve Time" class="icon">
+                <input type="date" id="date-picker" class="date-picker">
+                <button id="schedule-button" class="hidden">Schedule Date</button>
             </div>
             <div class="center-section">   
                 <p>MBTI：<span id="modal-mbti"></span></p>
@@ -31,9 +33,27 @@
                 <p>居住城市: <span id="modal-loc"></span></p>
                 <p>年齡: <span id="modal-age"></span></p>
                 <p>服務項目: <span id="modal-services"></span></p>
-                <!--<p>時薪: <span id="modal-price" class="red-text"></span></p>-->
+                <!-- <p>時薪: <span id="modal-price" class="red-text"></span></p> -->
             </div>
         </div>
+    </div>
+	<div id="schedule-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>  <!-- 關閉按鈕 -->
+            <p>Schedule:</p>
+            <div id="schedule-form" style="display: none;">
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name" required>
+				<br>
+				<label for="phone">Phone:</label>
+				<input type="tel" id="phone" name="phone" required>
+				<br>
+				<button id="submit-form">Submit</button>
+			</div>
+            <div id="schedule-details"></div>
+            <div id="calendar"></div>
+        </div>
+    </div>
     </div>
 </body>
 </html>

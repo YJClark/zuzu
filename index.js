@@ -67,3 +67,13 @@ $(function(){
  window.onload = function() {
     document.getElementById("male").click();
 };
+       document.addEventListener('DOMContentLoaded', function() {
+            const overlay = document.querySelector('.overlay');
+            const closeBtn = overlay.querySelector('.close');
+
+            // 关闭通知
+            closeBtn.addEventListener('click', function() {
+                overlay.style.display = 'none';
+                // 可以将关闭状态存储到本地存储或者服务器，以确保用户不再看到该通知
+            });
+        });
