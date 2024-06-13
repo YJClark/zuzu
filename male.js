@@ -162,16 +162,21 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set the minimum date to today for date picker
     const today = new Date().toISOString().split('T')[0];
     datePicker.setAttribute('min', today);
-
+    
     // Schedule the date
     scheduleButton.onclick = function() {
         const selectedDate = datePicker.value;
+        const selectedDateObj = new Date(selectedDate);
         if (selectedDate) {
-            addScheduleToCalendar(selectedDate);
-            datePicker.style.display = 'none';
-            scheduleButton.classList.add('hidden');
-            scheduleModal.style.display = 'block';
-            disableBackgroundInteraction();
+            if (selectedDateObj.getMonth() > 5) {
+                alert("Only June is available");
+            } else {
+                addScheduleToCalendar(selectedDate);
+                datePicker.style.display = 'none';
+                scheduleButton.classList.add('hidden');
+                scheduleModal.style.display = 'block';
+                disableBackgroundInteraction();
+            }
         } else {
             alert('Please select a date.');
         }

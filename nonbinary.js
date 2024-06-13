@@ -150,12 +150,17 @@ document.addEventListener('DOMContentLoaded', function() {
     // Schedule the date
     scheduleButton.onclick = function() {
         const selectedDate = datePicker.value;
+        const selectedDateObj = new Date(selectedDate);
         if (selectedDate) {
-            addScheduleToCalendar(selectedDate);
-            datePicker.style.display = 'none';
-            scheduleButton.classList.add('hidden');
-            scheduleModal.style.display = 'block';
-            disableBackgroundInteraction();
+            if (selectedDateObj.getMonth() > 5) {
+                alert("Only June is available");
+            } else {
+                addScheduleToCalendar(selectedDate);
+                datePicker.style.display = 'none';
+                scheduleButton.classList.add('hidden');
+                scheduleModal.style.display = 'block';
+                disableBackgroundInteraction();
+            }
         } else {
             alert('Please select a date.');
         }
