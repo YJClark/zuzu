@@ -9,7 +9,8 @@ var male = [
     { id: "Marc", price: 1450, imgSrc: "marc.jpg"},
     { id: "Austin", price: 1350, imgSrc: "min.jpg"},
     { id: "Peko", price: 1500, imgSrc: "peko.jpg"},
-    { id: "Oscar", price: 2000, imgSrc: "yang.jpg" }
+    { id: "Oscar", price: 2000, imgSrc: "yang.jpg" },
+    { id: "Kozushun", price: 1500, imgSrc: "jp.jpg"}
 ]
 
 var detail = [
@@ -23,7 +24,8 @@ var detail = [
     { mbti: "AIDS", height:"172", loc:"台北", aca:"建國高中", career:"筆記提供者", feature:"<175", mar:"穩交", lan:"中文、英文", age:'21'},
     { mbti: "ISTP", height:"178", loc:"台中",aca:"清水高中", career:"學生", feature:"畫畫", mar:"穩單", lan:"中文、英文", age:'21'},
     { mbti: "INFP", height:"176", loc:"高雄",aca:"明誠高中", career:"睡魔", feature:"正在玩nm", mar:"單身", lan:"中文、英文", age:'21'},
-    { mbti: "ENFJ", height:"175", loc:"台北",aca:"成功大學", career:"學生", feature:"爵士音樂", mar:"單身", lan:"中文、英文", age:'21'}
+    { mbti: "ENFJ", height:"175", loc:"台北",aca:"成功大學", career:"學生", feature:"爵士音樂", mar:"單身", lan:"中文、英文", age:'22'},
+    { mbti: "Japan", height:"175", loc:"熊本",aca:"熊本某五專", career:"學生", feature:"日本武士", mar:"穩交", lan:"中文、日文、英文", age:'22'}
 ]
 
 var service = [
@@ -37,7 +39,8 @@ var service = [
     {services: "鐘點約會、專業職人、商業應酬"},
     {services: "鐘點約會、專業職人、商業應酬"},
     {services: "鐘點約會、專業職人、商業應酬、朋友聚會"},
-    {services: "鐘點約會、專業職人、商業應酬"}
+    {services: "鐘點約會、專業職人、商業應酬"},
+    {services: "鐘點約會、旅遊陪同、專業職人、朋友聚會、商業應酬"}
 ]
 
 
@@ -108,7 +111,7 @@ document.querySelectorAll('.detail_btn').forEach(button => {
         document.getElementById('modal-loc').textContent = personDetail.loc;
         document.getElementById('modal-age').textContent = personDetail.age;
         document.getElementById('modal-services').textContent = ser.services;
-        document.getElementById('modal-price').textContent = `NT ${person.price}`;
+        //document.getElementById('modal-price').textContent = `NT ${person.price}`;
 
         document.getElementById('modal').style.opacity = 0;
         document.getElementById('modal').style.display = "block";

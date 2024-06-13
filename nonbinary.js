@@ -95,7 +95,7 @@ document.querySelectorAll('.detail_btn').forEach(button => {
         document.getElementById('modal-loc').textContent = personDetail.loc;
         document.getElementById('modal-age').textContent = personDetail.age;
         document.getElementById('modal-services').textContent = ser.services;
-        document.getElementById('modal-price').textContent = `NT$ ${person.price}`;
+        //document.getElementById('modal-price').textContent = `NT$ ${person.price}`;
 
         document.getElementById('modal').style.opacity = 0;
         document.getElementById('modal').style.display = "block";
