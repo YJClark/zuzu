@@ -1,10 +1,10 @@
-function cancel(){
-    if($("#login-form").dialog("isOpen")) {
+function cancel() {
+    if ($("#login-form").dialog("isOpen")) {
         $("#login-form").dialog("close");
         document.getElementById('username').value = '';
         document.getElementById('password').value = '';
     }
-    if($("#register-form").dialog("isOpen")) {
+    if ($("#register-form").dialog("isOpen")) {
         $("#register-form").dialog("close");
         document.getElementById('new_username').value = '';
         document.getElementById('password1').value = '';
@@ -48,32 +48,29 @@ $('#register-form').dialog({
     dialogClass: 'custom-dialog'
 });
 
-//登入、註冊button
-$(function(){
+$(function() {
     $("#call-loginbtn").click(function() {
-       ($("#login-form").dialog("isOpen") == false) ? $("#login-form").dialog("open") : $("#login-form").dialog("close");
-       if ($("#register-form").dialog("isOpen") === true)   $("#register-form").dialog("close");
+        ($("#login-form").dialog("isOpen") == false) ? $("#login-form").dialog("open") : $("#login-form").dialog("close");
+        if ($("#register-form").dialog("isOpen") === true) $("#register-form").dialog("close");
     });
- });
+});
 
- $(function(){
+$(function() {
     $("#registerbtn").click(function() {
-       ($("#register-form").dialog("isOpen") == false) ? $("#register-form").dialog("open") : $("#register-form").dialog("close");
-       if ($("#login-form").dialog("isOpen") === true)   $("#login-form").dialog("close");
+        ($("#register-form").dialog("isOpen") == false) ? $("#register-form").dialog("open") : $("#register-form").dialog("close");
+        if ($("#login-form").dialog("isOpen") === true) $("#login-form").dialog("close");
     });
- });
+});
 
-  //這裡先觸發male.html
- window.onload = function() {
+window.onload = function() {
     document.getElementById("male").click();
 };
-       document.addEventListener('DOMContentLoaded', function() {
-            const overlay = document.querySelector('.overlay');
-            const closeBtn = overlay.querySelector('.close');
 
-            // 关闭通知
-            closeBtn.addEventListener('click', function() {
-                overlay.style.display = 'none';
-                // 可以将关闭状态存储到本地存储或者服务器，以确保用户不再看到该通知
-            });
-        });
+document.addEventListener('DOMContentLoaded', function() {
+    const overlay = document.querySelector('.overlay');
+    const closeBtn = overlay.querySelector('.close');
+
+    closeBtn.addEventListener('click', function() {
+        overlay.style.display = 'none';
+    });
+});

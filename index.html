@@ -6,8 +6,10 @@
     <title>ZUZU_TW</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/ui-lightness/jquery-ui.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="index.js" defer></script>
 </head>
 <body>
@@ -26,7 +28,8 @@
             </button>
         </div> 
     </div>
-	   <div class="overlay">
+    
+    <div class="overlay">
         <div class="notice-container">
             <span class="close">&times;</span>
             <h2>本平台使用須知：</h2>
@@ -38,20 +41,20 @@
     </div>
     <div id="login-form" title="Hi, mate!">
         <form>
-            <input type="text" id="username" placeholder="Account" required><br><br>
-            <input type="password" id="password" placeholder="Password" required><br><br>
-            <input type="button" value="Login" id="login-btn" onclick="validate()">
-            <input type="button" value="Cancel" id="cancel-btn" onclick="cancel()">
+            <input type="text" id="username" placeholder="Account" class="form-control" required><br><br>
+            <input type="password" id="password" placeholder="Password" class="form-control" required><br><br>
+            <input type="button" value="Login" id="login-btn" class="btn btn-primary" onclick="validate()">
+            <input type="button" value="Cancel" id="cancel-btn" class="btn btn-secondary" onclick="cancel()">
         </form>
     </div>
 
     <div id="register-form" title="New to ZuZu?">
         <form>
-            <input type="text" id="new_username" placeholder="Account" required><br><br>
-            <input type="password" id="password1" placeholder="Password" required><br><br>
-            <input type="password" id="password2" placeholder="Confirmed Password" required><br><br>
-            <input type="button" value="Confirm" id="register-btn" onclick="register()">
-            <input type="button" value="Cancel" id="cancel-btn" onclick="cancel()">
+            <input type="text" id="new_username" placeholder="Account" class="form-control" required><br><br>
+            <input type="password" id="password1" placeholder="Password" class="form-control" required><br><br>
+            <input type="password" id="password2" placeholder="Confirmed Password" class="form-control" required><br><br>
+            <input type="button" value="Confirm" id="register-btn" class="btn btn-primary" onclick="register()">
+            <input type="button" value="Cancel" id="cancel-btn" class="btn btn-secondary" onclick="cancel()">
         </form>
     </div>
     
@@ -61,10 +64,10 @@
         </div>
         
         <div id="product">
-            <ul id="tabs">
-                <li><a class="option" target="page" id="female" href="female.html">Female</a></li>
-                <li><a class="option" target="page" id="male" href="male.html">Male</a></li>
-                <li><a class="option" target="page" id="nb" href="nonbinary.html">Non-binary</a></li>
+            <ul id="tabs" class="nav nav-pills justify-content-center">
+                <li class="nav-item"><a class="nav-link option" target="page" id="female" href="female.html">Female</a></li>
+                <li class="nav-item"><a class="nav-link option" target="page" id="male" href="male.html">Male</a></li>
+                <li class="nav-item"><a class="nav-link option" target="page" id="nb" href="nonbinary.html">NonBinary</a></li>
             </ul>
         </div>
     </main>
@@ -72,6 +75,5 @@
     <div>
         <iframe id="product_iframe" name="page"></iframe>
     </div>
-
 </body>
 </html>
