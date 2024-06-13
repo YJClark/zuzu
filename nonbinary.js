@@ -2,7 +2,7 @@ var others = [
     { id: "Squirtle", price: 1200, imgSrc: "squirtle.jpg" },
     { id: "Charmander", price: 1600, imgSrc: "charmander.jpg" },
     { id: "Pikachu", price: 2000, imgSrc: "pikachu.jpg" },
-    { id: "Bulbasaur", price: 1600, imgSrc: "Bulbasaur.jpg" },
+    { id: "Bulbasaur", price: 1600, imgSrc: "bulbasaur.jpg" },
     { id: "BiBi", price: 1800, imgSrc: "bibi.jpg" },
     { id: "Shiba", price: 1500, imgSrc: "shiba.jpg" },
     { id: "Samoyed", price: 1600, imgSrc: "samoyed.jpg" }

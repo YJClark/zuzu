@@ -1,6 +1,6 @@
 var male = [
     { id: "Bobo", price: 1000, imgSrc: "bobo.jpg" },
-    { id: "Yorick", price: 1250, imgSrc: "Yorick.jpg" },
+    { id: "Yorick", price: 1250, imgSrc: "yorick.jpg" },
     { id: "Clark", price: 1600, imgSrc: "clark.jpg" },
     { id: "Edison", price: 1200, imgSrc: "edison.jpg" },
     { id: "Jeff", price: 1000, imgSrc: "jeff.jpg" },
@@ -10,7 +10,7 @@ var male = [
     { id: "Austin", price: 1350, imgSrc: "min.jpg"},
     { id: "Peko", price: 1500, imgSrc: "peko.jpg"},
     { id: "Oscar", price: 2000, imgSrc: "yang.jpg" },
-    { id: "Kozushun", price: 1500, imgSrc: "jp.jpg"}
+    { id: "Kozushun", price: 1500, imgSrc: "kozushun.jpg"}
 ]
 
 var detail = [
