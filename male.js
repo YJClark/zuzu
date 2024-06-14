@@ -14,18 +14,18 @@ var male = [
 ]
 
 var detail = [
-    { mbti: "ENFJ", height:"183", loc:"台中", aca:"台中一中", career:"健身教練", feature:"肌肉棒子", mar:"穩交", lan:"中文、英文", age:'21'},
+    { mbti: "LOVE", height:"183", loc:"台中", aca:"台中一中", career:"CCP小組長", feature:"肌肉棒子", mar:"穩交", lan:"中文、英文", age:'21'},
     { mbti: "ESTJ", height:"173", loc:"台北", aca:"成功高中", career:"超級男模", feature:"男友不管，男模會館", mar:"穩交", lan:"中文、英文", age:'21'},
-    { mbti: "EMO", height:"174", loc:"台南", aca:"台南一中", career:"學生", feature:"Sana現暈", mar:"穩單", lan:"中文、英文", age:'21'},
-    { mbti: "ADHD", height:"183", loc:"台南", aca:"台南一中", career:"發明大王", feature:"顧肺", mar:"未知", lan:"中文、英文", age:'21'},
-    { mbti: "LOVE", height:"170", loc:"台東", aca:"台東高中", career:"學生", feature:"內捲", mar:"穩交", lan:"中文、英文", age:'21'},
+    { mbti: "EMO", height:"174", loc:"台南", aca:"台南一中", career:"期貨看空小丑", feature:"Sana現暈", mar:"穩單", lan:"中文、英文", age:'21'},
+    { mbti: "ADHD", height:"183", loc:"台南", aca:"台南一中", career:"發明大王", feature:"顧肺", mar:"不明", lan:"中文、英文", age:'21'},
+    { mbti: "AIDS", height:"170", loc:"台東", aca:"台東高中", career:"海王", feature:"內捲", mar:"穩交", lan:"中文、英文", age:'21'},
     { mbti: "ESFP", height:"183", loc:"高雄", aca:"高雄高中", career:"中捷救世主", feature:"長髮男", mar:"穩單", lan:"中文", age:'21'},
-    { mbti: "ESTP", height:"183", loc:"台北", aca:"成功高中", career:"籃球隊長", feature:"籃球", mar:"穩交", lan:"中文、英文", age:'21'},
-    { mbti: "AIDS", height:"172", loc:"台北", aca:"建國高中", career:"筆記提供者", feature:"<175", mar:"穩交", lan:"中文、英文", age:'21'},
-    { mbti: "ISTP", height:"178", loc:"台中",aca:"清水高中", career:"學生", feature:"畫畫", mar:"穩單", lan:"中文、英文", age:'21'},
+    { mbti: "ESTP", height:"183", loc:"台北", aca:"成功高中", career:"32紀錄保持人", feature:"重修就好", mar:"穩交", lan:"中文、英文", age:'21'},
+    { mbti: "GoodNotes", height:"172", loc:"台北", aca:"建國高中", career:"筆記提供者", feature:"沒腹肌+<175", mar:"穩交", lan:"中文、英文", age:'21'},
+    { mbti: "ISTP", height:"178", loc:"台中",aca:"清水高中", career:"投手", feature:"小便般的曲球", mar:"穩單", lan:"中文、英文", age:'21'},
     { mbti: "INFP", height:"176", loc:"高雄",aca:"明誠高中", career:"睡魔", feature:"正在玩nm", mar:"單身", lan:"中文、英文", age:'21'},
     { mbti: "ENFJ", height:"175", loc:"台北",aca:"成功大學", career:"學生", feature:"爵士音樂", mar:"單身", lan:"中文、英文", age:'22'},
-    { mbti: "Japan", height:"175", loc:"熊本",aca:"熊本某五專", career:"日本武士", feature:"", mar:"穩交", lan:"中文、日文", age:'22'},
+    { mbti: "Japan", height:"175", loc:"熊本",aca:"熊本某五專", career:"日本武士", feature:"我有居留證!", mar:"穩交", lan:"中文、日文", age:'22'},
 ]
 
 var service = [
