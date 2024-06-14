@@ -182,9 +182,9 @@ main {
         margin: 10px 0;
         padding: 0;
         text-align: center;
-        font: 15px bold Andale Mono, monospace;
+        font: 20px bold Andale Mono, monospace;
     }
-    
+
     main {
         flex-direction: column;
     }
