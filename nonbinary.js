@@ -15,7 +15,7 @@ var detail = [
     { mbti:"ISFJ", height:"70", loc:"台南", aca:"草", career:"青蛙", feature:"茂盛", mar:"單身", lan:"日文", age:'23'},
     { mbti:"ISFP", height:"70", loc:"永康", aca:"吃貨", career:"睡覺", feature:"睡覺", mar:"已結渣", lan:"喵", age:'6'},
     { mbti:"INFP", height:"120", loc:"育樂街", aca:"吃貨", career:"拆家", feature:"賣握手捲", mar:"已結紮", lan:"汪", age:'3'},
-    { mbti:"ESFJ", height:"130", loc:"Pinterest", aca:"吃貨", career:"騙流量", feature:"探索中", mar:"已結紮", lan:"嗷烏", age:'4'}
+    { mbti:"ESFJ", height:"130", loc:"Pinterest", aca:"吃貨", career:"騙流量", feature:"探索中", mar:"已結紮", lan:"嗷嗚", age:'4'}
 ]
 
 var service = [
