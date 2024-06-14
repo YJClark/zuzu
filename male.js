@@ -18,7 +18,7 @@ var detail = [
     { mbti: "ESTJ", height:"173", loc:"台北", aca:"成功高中", career:"超級男模", feature:"男友不管，男模會館", mar:"穩交", lan:"中文、英文", age:'21'},
     { mbti: "EMO", height:"174", loc:"台南", aca:"台南一中", career:"期貨看空小丑", feature:"Sana現暈", mar:"穩單", lan:"中文、英文", age:'21'},
     { mbti: "ADHD", height:"183", loc:"台南", aca:"台南一中", career:"發明大王", feature:"顧肺", mar:"不明", lan:"中文、英文", age:'21'},
-    { mbti: "AIDS", height:"170", loc:"台東", aca:"台東高中", career:"海王", feature:"內捲", mar:"穩交", lan:"中文、英文", age:'21'},
+    { mbti: "AIDS", height:"170", loc:"台東", aca:"台東高中", career:"學生", feature:"內捲", mar:"穩交", lan:"中文、英文", age:'21'},
     { mbti: "ESFP", height:"183", loc:"高雄", aca:"高雄高中", career:"中捷救世主", feature:"長髮男", mar:"穩單", lan:"中文", age:'21'},
     { mbti: "ESTP", height:"183", loc:"台北", aca:"成功高中", career:"32紀錄保持人", feature:"重修就好", mar:"穩交", lan:"中文、英文", age:'21'},
     { mbti: "Notion", height:"172", loc:"台北", aca:"建國高中", career:"筆記提供者", feature:"沒腹肌+<175", mar:"穩交", lan:"中文、英文", age:'21'},
